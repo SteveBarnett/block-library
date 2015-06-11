@@ -54,3 +54,19 @@
     background-color: #fff;
   }  
 }
+
+.accordion-navigation {
+  position: relative;
+  &:after {
+    content: "▼";
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+  &.active {
+    &:after {
+      content: "▲";
+    }
+  }
+}
